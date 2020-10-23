@@ -1,0 +1,43 @@
+  form{
+    width: 25%;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .redF{
+    color: red;
+    font-size: 10px;
+    text-align: left;
+  }
+  .redT{
+    color: red;
+    font-size: 10px;
+    text-align: right;
+    margin-top: 5px;
+
+  }
+  label{
+    font-size: 12px;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input,textarea{
+    /* margin-bottom: 20px ; */
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  input[type="button"]{
+    background: salmon;
+    color: white;
+    border: none;
+  }
+
+  input[type="button"]:hover{
+    background: rgb(255, 85, 66);
+    color: white;
+    cursor: pointer;
+  }

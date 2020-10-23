@@ -1,0 +1,36 @@
+div{
+width: 25%;
+border: 1px solid black;
+margin: 20px;
+padding: 20px;
+}
+
+label{
+  font-size: 12px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+body{
+  margin: 1rem;
+  padding: 1rem;
+}
+
+input,textarea{
+  margin-bottom: 20px ;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+input[type="submit"]{
+  background: salmon;
+  color: white;
+  border: none;
+}
+
+input[type="submit"]:hover{
+  background: rgb(255, 85, 66);
+  color: white;
+  cursor: pointer;
+}

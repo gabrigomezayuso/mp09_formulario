@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="">
+    <label for="Nombre">Nombre</label>
+    <input type="text" #vName id="" placeholder="Escriba su nombre">
+    <br>
+    <br>
+    <label for="DNI">DNI</label>
+    <input type="text" #vDNI id="" placeholder="Escriba su DNI">
+    <div [ngSwitch]="mostrarError2">
+        <div *ngSwitchCase="'DNI Incorrecto'" class="redF">DNI Incorrecto</div>
+    </div>
+    <br>
+    <label for="Mensaje">Mensaje</label>
+    <textarea type="text" #vText id="" placeholder="Escriba su mensaje"></textarea>
+    <div [ngSwitch]="mostrarError">
+      <div *ngSwitchCase="'El texto introducido es demasiado corto'" class="redT">El texto introducido es demasiado corto</div>
+  </div>
+  <br>
+
+    <input type="button" (click)="EnviarDatos(vName, vDNI.value, vText.value)" value="Enviar">
+  </form>
+</body>
+</html>
